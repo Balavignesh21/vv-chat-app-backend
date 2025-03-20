@@ -15,10 +15,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server, {
   cors: {
-    origin: [
-      "http://localhost:5173",
-      "https://vv-chat-app-backend.onrender.com",
-    ],
+    origin: ["http://localhost:5173", "https://vv-chat-app.onrender.com"],
     methods: ["GET", "POST"],
     credentials: true,
   },
